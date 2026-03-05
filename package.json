@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "build": "next build && next export",
     "deploy": "echo 'true' > ./out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {
