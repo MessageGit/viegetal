@@ -22,8 +22,30 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const fontCss = `
+    @font-face {
+      font-family: 'Checkpoint-Bold';
+      src: url('${basePath}/fonts/checkpoint/Checkpoint-Bold.ttf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Checkpoint-Regular';
+      src: url('${basePath}/fonts/checkpoint/Checkpoint-Regular.ttf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+  `;
+
   return (
     <html lang="fr">
+      <head>
+        <style dangerouslySetInnerHTML={{ __html: fontCss }} />
+      </head>
+
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
