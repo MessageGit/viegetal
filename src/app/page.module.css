@@ -1,141 +1,212 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
-}
-
-.main {
-  display: flex;
-  min-height: 100vh;
+.Main {
+  position: relative;
   width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.intro {
+.Background {
+  position: fixed!important;
+  filter: blur(10px);
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+.Viegetal__Logo {
+  position: absolute;
+  margin: 0 auto;
+  top: 24px;
+}
+
+.Card {
+  margin-top: 256px!important;
+  margin: 24px;
+  padding: 12px;
+  position: relative;
+  width: 853px;
+  height: 1680px;
+  box-shadow: 0px 0px 7px 0px #00000025;
+  background-color: white;
+  overflow: hidden;
+  
+  @media (min-width: 720px) {
+    height: 1280px;
+  }
+
+  @media (min-width: 940px) {
+    margin: 128px;
+  }
+}
+
+.Title {
+  font-size: 7vw;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  text-align: center;
+  
+  @media (min-width: 940px) {
+    font-size: 72px;
+  }
+}
+
+.Hosts {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  gap: 32px;
+
+  @media (min-width: 620px) {
+    gap: 64px;
+  }
+}
+
+.Host__Card {
+  font-size: 24px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
+  align-items: flex-end;
+  
+  @media (min-width: 620px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 940px) {
+    font-size: 38px;
+  }
 }
 
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+.Family__Name {
+  text-transform: uppercase;
 }
 
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+.Host__Status {
+  margin-top: -6px;
+  text-transform: uppercase;
+  font-size: 24px;
+  
+  @media (min-width: 620px) {
+    margin-top: -12px;
+  }
 }
 
-.intro a {
+.Body__Container {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Body__Title {
+  text-transform: uppercase;
+  font-size: 44px;
   font-weight: 500;
-  color: var(--text-primary);
 }
 
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
+.Body__SubTitle {
+  font-size: 28px;
 }
 
-.ctas a {
+.Background__Inner_Card {
+  position: absolute;
+  left: -24px;
+}
+
+.Body__Cards {
+  position: relative;
+  margin-top: 24px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: column;
+  z-index: 1;
+  
+  @media (min-width: 720px) {
+    flex-direction: unset;
+    flex-wrap: wrap;
+  }
+}
+
+.Body__Card {
+  margin: 12px;
+  padding: 18px 32px 18px 42px;
+  background-color: #dae0d2;
   width: fit-content;
+  border-radius: 8px;
+  font-size: 22px;
+}
+
+.Body__Card__Title {
+  font-size: 32px;
+  text-transform: uppercase;
   font-weight: 500;
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
+.Body__Card__Text {
+  display: block;
+  max-width: 140px;
 }
 
-a.secondary {
-  border-color: var(--button-secondary-border);
-}
+.Booking__Info {
+  width: fit-content;
+  margin: 64px auto 0 auto;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
+  @media (min-width: 720px) {
+    margin: 24px 64px 0 auto;
   }
 }
 
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
-  }
+.Pricing {
+  font-size: 52px;
+  font-weight: 500;
+}
 
-  .intro {
-    gap: 16px;
-  }
+.Uppercase {
+  text-transform: uppercase;
+}
 
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
+.Footer {
+  position: absolute;
+  bottom: 34px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Footer__Time_Address {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 28px;
+  
+  @media (min-width: 620px) {
+    display: block;
+    font-size: 38px;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+.Footer__Address {
+  
+  @media (min-width: 720px) {
+    margin-left: 64px;
   }
+}
 
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+.Footer__Date {
+  font-size: 42px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 14px;
+  text-align: center;
+  
+  @media (min-width: 620px) {
+    font-size: 52px;
   }
 }

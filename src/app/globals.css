@@ -14,6 +14,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: #161f19;
 }
 
 body {
@@ -35,8 +36,36 @@ a {
   text-decoration: none;
 }
 
+span, strong, h1, ul {
+  color: #607d66;
+}
+
+strong, h1 {
+  font-family: 'Checkpoint-Bold', sans-serif;
+}
+
+span, ul {
+  font-family: 'Checkpoint-Regular', sans-serif;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+@font-face {
+  font-family: 'Checkpoint-Bold';
+  src: url('/fonts/checkpoint/Checkpoint-Bold.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Checkpoint-Regular';
+  src: url('/fonts/checkpoint/Checkpoint-Regular.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }

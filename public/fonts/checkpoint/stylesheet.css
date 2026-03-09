@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Checkpoint';
+    src: url('Checkpoint-Bold.eot');
+    src: local('Checkpoint Bold'), local('Checkpoint-Bold'),
+        url('Checkpoint-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Checkpoint-Bold.woff2') format('woff2'),
+        url('Checkpoint-Bold.woff') format('woff'),
+        url('Checkpoint-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Checkpoint';
+    src: url('Checkpoint-Lightitalic.eot');
+    src: local('Checkpoint Light italic'), local('Checkpoint-Lightitalic'),
+        url('Checkpoint-Lightitalic.eot?#iefix') format('embedded-opentype'),
+        url('Checkpoint-Lightitalic.woff2') format('woff2'),
+        url('Checkpoint-Lightitalic.woff') format('woff'),
+        url('Checkpoint-Lightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Checkpoint';
+    src: url('Checkpoint-Regularitalic.eot');
+    src: local('Checkpoint Regular italic'), local('Checkpoint-Regularitalic'),
+        url('Checkpoint-Regularitalic.eot?#iefix') format('embedded-opentype'),
+        url('Checkpoint-Regularitalic.woff2') format('woff2'),
+        url('Checkpoint-Regularitalic.woff') format('woff'),
+        url('Checkpoint-Regularitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Checkpoint';
+    src: url('Checkpoint-Bolditalic.eot');
+    src: local('Checkpoint Bold italic'), local('Checkpoint-Bolditalic'),
+        url('Checkpoint-Bolditalic.eot?#iefix') format('embedded-opentype'),
+        url('Checkpoint-Bolditalic.woff2') format('woff2'),
+        url('Checkpoint-Bolditalic.woff') format('woff'),
+        url('Checkpoint-Bolditalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Checkpoint';
+    src: url('Checkpoint-Regular.eot');
+    src: local('Checkpoint Regular'), local('Checkpoint-Regular'),
+        url('Checkpoint-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Checkpoint-Regular.woff2') format('woff2'),
+        url('Checkpoint-Regular.woff') format('woff'),
+        url('Checkpoint-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Checkpoint';
+    src: url('Checkpoint-Light.eot');
+    src: local('Checkpoint Light'), local('Checkpoint-Light'),
+        url('Checkpoint-Light.eot?#iefix') format('embedded-opentype'),
+        url('Checkpoint-Light.woff2') format('woff2'),
+        url('Checkpoint-Light.woff') format('woff'),
+        url('Checkpoint-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
