@@ -6,14 +6,14 @@ export default function Home() {
     <main className={styles.Main}>
       <Image
         className={styles.Background}
-        src="/viegetal_background.jpg"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/viegetal_background.jpg`}
         alt="Background"
         fill
       />
       
       <Image
         className={styles.Viegetal__Logo}
-        src="/viegetal_logo_white.png"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/viegetal_logo_white.png`}
         alt="Logo blanc"
         width={320}
         height={189}
@@ -49,7 +49,7 @@ export default function Home() {
               
           <Image
             className={styles.Background__Inner_Card}
-            src="/background_layout.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/background_layout.png`}
             alt="Inner card background particle"
             width={430}
             height={720}
